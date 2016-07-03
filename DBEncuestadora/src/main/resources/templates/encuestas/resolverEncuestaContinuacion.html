@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head"></head>
+<body>
+	<nav th:replace="fragments/nav :: nav">.........</nav>
+	<div th:include="fragments/sideMenu :: sideMenu"></div>
+	<div th:replace="fragments/deleteConfirmationModal :: deleteConfirmationModal"></div>
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+
+
+		<form role="form" action="#"
+			th:action="@{/encuestas/resolver/continuacion}"
+			th:object="${resolverEncuestaDTO}">
+			<input th:field="*{preguntaActual.id}" type="hidden" class="form-control" id="preguntaActual.id"></input>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Resolver Encuesta</h3>
+				</div>
+				<div class="panel-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4">
+								<label>Usuario: </label>
+								<label	th:text="${resolverEncuestaEncabezadoDTO.usuario.nombre + ' ' + resolverEncuestaEncabezadoDTO.usuario.apellido}"></label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<label> Encuesta: </label>
+								<label th:text="${resolverEncuestaEncabezadoDTO.encuesta.titulo}"> </label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<label> Descripcion: </label>
+								<label	th:text="${resolverEncuestaEncabezadoDTO.encuesta.descripcion}"></label>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<label> Pregunta: </label> 
+					<label	th:text="${resolverEncuestaDTO.preguntaActual.descripcion}"></label>
+				</div>
+				<div class="panel-body">
+					<ul class="list-unstyled">
+						
+						<li	th:each="rp : ${resolverEncuestaDTO.preguntaActual.respuestas}">
+							<input type="radio" th:field="*{respuestaActual}" th:value="${rp.id}" />
+							<label th:text="${rp.descripcion}" ></label>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div class="container-fluid">
+
+
+				<div class="row">
+					<div class="col-sm-4">
+						<input class="btn btn-default" type="submit" value="Siguiente"/>
+					</div>
+				</div>
+			</div>
+
+		</form>
+
+	</div>
+	<div th:include="fragments/footer :: scripts"></div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head"></head>
+<body>
+	<nav th:replace="fragments/nav :: nav">.........</nav>
+	<div th:include="fragments/sideMenu :: sideMenu"></div>
+	<div
+		th:replace="fragments/deleteConfirmationModal :: deleteConfirmationModal"></div>
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Encuestas Realizadas</h3>
+				</div>
+				<div class="panel-body">
+		
+		<table class="table table-striped data-tables">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Encuesta</th>
+					<th>Fecha</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="encuestaUsuario : ${encuestaUsuarios}">
+					<td th:text="${encuestaUsuario.usuario.nombre}"></td>
+					<td th:text="${encuestaUsuario.usuario.apellido}"></td>
+					<td th:text="${encuestaUsuario.encuesta.titulo}"></td>
+					<td th:text="${#calendars.format(encuestaUsuario.fecha,'dd MMMM yyyy')}"></td>
+					
+					<td>
+						<a class="btn btn-default"	th:href="'/encuestas/resueltas/show/' + ${encuestaUsuario.id}">
+							<span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+	</div>
+	</div>
+	<div th:include="fragments/footer :: scripts"></div>
+	<div
+		th:replace="fragments/deleteConfirmationModal :: deleteConfirmationScripts"></div>
+</body>
+</html>
+

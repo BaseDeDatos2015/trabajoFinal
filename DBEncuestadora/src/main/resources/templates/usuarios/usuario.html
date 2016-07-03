@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head"></head>
+<body>
+	<nav th:replace="fragments/nav :: nav">.........</nav>
+	<div th:include="fragments/sideMenu :: sideMenu"></div>
+	<div th:replace="fragments/deleteConfirmationModal :: deleteConfirmationModal"></div>
+
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+
+		<form role="form" action="#" th:action="@{/usuarios}"	th:object="${usuario}" method="post">
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">Usuario</h3>
+				</div>
+				<div class="panel-body">
+					<input th:field="*{id}" type="hidden" class="form-control" id="id"></input>
+					<input th:field="*{version}" type="hidden" class="form-control"	id="version"></input>
+
+					 <div class="row">
+					     <div class="col-sm-6">
+								<div class="form-group">
+									<label for="name">Nombre:</label>
+									<input th:field="*{nombre}"	type="text" class="form-control" id="nombre"></input>
+									<p th:if="${#fields.hasErrors('nombre')}" class="label label-danger" th:errors="*{nombre}"></p>
+								</div>      
+					      </div>
+					       <div class="col-sm-6">
+								<div class="form-group">
+									<label for="name">Apellido:</label> 
+									<input th:field="*{apellido}" type="text" class="form-control" id="apellido"></input>
+									<p th:if="${#fields.hasErrors('apellido')}"	class="label label-danger" th:errors="*{apellido}"></p>
+								</div>
+					  		</div>	
+					  </div>
+					<div class="row">
+					     <div class="col-sm-6">	
+							<div class="form-group">
+								<label for="email">Email:</label> 
+								<input th:field="*{email}" type="text" class="form-control" id="email"></input>
+								<p th:if="${#fields.hasErrors('email')}" class="label label-danger" th:errors="*{email}"></p>
+							</div>
+						</div>
+					</div>		
+					<div class="row">
+					     <div class="col-sm-6">
+							<div class="form-group">
+								<label for="name">Usuario:</label> 
+								<input	th:field="*{nombreUsuario}" type="text" class="form-control" id="nombreUsuario"></input>
+								<p th:if="${#fields.hasErrors('nombreUsuario')}" class="label label-danger" th:errors="*{nombreUsuario}"></p>
+							</div>
+						</div>
+						<div class="col-sm-6">	
+							<div class="form-group">
+								<label for="name">Clave:</label> 
+								<input th:field="*{password}" type="text" class="form-control" id="password"></input>
+								<p th:if="${#fields.hasErrors('password')}" class="label label-danger" th:errors="*{password}"></p>
+							</div>
+						</div>	
+					</div>	
+					<div class="row">
+					     <div class="col-sm-6">	
+							<div class="form-group">
+								<label for="rol">Rol:</label> 
+								<select id="rol" th:field="*{rol}"
+									class="form-control">
+									<option th:each="rol : ${roles}" th:value="${rol.id}" th:text="${rol.nombre}"></option>
+								</select>
+							</div>
+						</div>	
+					</div>
+				</div>	
+			</div>
+			<button type="submit" class="btn btn-info">Aceptar</button>
+		</form>
+	</div>
+	<div th:include="fragments/footer :: scripts"></div>
+</body>
+</html>

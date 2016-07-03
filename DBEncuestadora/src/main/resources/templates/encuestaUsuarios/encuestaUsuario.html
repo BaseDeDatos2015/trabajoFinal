@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head"></head>
+<body>
+	<nav th:replace="fragments/nav :: nav">.........</nav>
+	<div th:include="fragments/sideMenu :: sideMenu"></div>
+
+	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		<h1 class="fragments/page-header"></h1>
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h3 class="panel-title">Encuesta realizada</h3>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-4">
+						<label> Usuario: </label> 
+						<label	th:text="${encuestaUsuario.usuario.nombre + ' ' + encuestaUsuario.usuario.apellido}"></label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<label> Encuesta: </label> 
+						<label	th:text="${encuestaUsuario.encuesta.titulo}"> </label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8">
+						<label> Descripcion: </label> 
+						<label	th:text="${encuestaUsuario.encuesta.descripcion}"> </label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8">
+						<label> Puntaje Obtenido: </label> 
+						<label	th:text="${encuestaUsuario.puntaje}"> </label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Preguntas</h3>
+			</div>
+			<div class="panel-body">
+				<ul class="list-unstyled">
+					<li th:each="rp : ${encuestaUsuario.respuestasUsuario}">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<label th:text="${rp.pregunta.descripcion}"></label>
+							</div>
+							<div class="panel-body">
+								<label th:text="${rp.respuesta.descripcion}"></label>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4">
+					<a href="/encuestas/resueltas" class="btn btn-default" role="button">Cerrar</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div th:include="fragments/footer :: scripts"></div>
+
+</body>
+</html>
+
