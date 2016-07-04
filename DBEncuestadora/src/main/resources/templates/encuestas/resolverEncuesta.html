@@ -29,7 +29,7 @@
 									<option 
 										th:each="usuario : ${usuarios}"
 										th:value="${usuario.id}"
-										th:text="${usuario.nombre + usuario.apellido}">
+										th:text="${usuario.nombre +' '+ usuario.apellido}">
 									</option>
 								</select>
 							</div>
