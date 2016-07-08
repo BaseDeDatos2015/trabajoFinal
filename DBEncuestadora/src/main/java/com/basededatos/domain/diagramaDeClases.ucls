@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
-  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="com.basededatos.domain.Encuesta" project="DBEncuestadora" 
-    file="/DBEncuestadora/src/main/java/com/basededatos/domain/Encuesta.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="202" y="-30"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" name="com.basededatos.domain.EncuestaUsuario" project="DBEncuestadora" 
+<class-diagram version="1.1.9" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.basededatos.domain.EncuestaUsuario" project="DBEncuestadora" 
     file="/DBEncuestadora/src/main/java/com/basededatos/domain/EncuestaUsuario.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="205" y="416"/>    
+    <position height="-1" width="-1" x="390" y="259"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="com.basededatos.domain.EstadoEncuesta" project="DBEncuestadora" 
-    file="/DBEncuestadora/src/main/java/com/basededatos/domain/EstadoEncuesta.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="412" y="-128"/>    
+  <class id="2" language="java" name="com.basededatos.domain.Usuario" project="DBEncuestadora" 
+    file="/DBEncuestadora/src/main/java/com/basededatos/domain/Usuario.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="109" y="247"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="com.basededatos.domain.Pregunta" project="DBEncuestadora" 
-    file="/DBEncuestadora/src/main/java/com/basededatos/domain/Pregunta.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="652" y="62"/>    
+  <class id="3" language="java" name="com.basededatos.domain.Respuesta" project="DBEncuestadora" 
+    file="/DBEncuestadora/src/main/java/com/basededatos/domain/Respuesta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="987" y="26"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.basededatos.domain.Encuesta" project="DBEncuestadora" 
+    file="/DBEncuestadora/src/main/java/com/basededatos/domain/Encuesta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="390" y="-210"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -41,110 +41,135 @@
   <class id="5" language="java" name="com.basededatos.domain.RespuestaUsuario" project="DBEncuestadora" 
     file="/DBEncuestadora/src/main/java/com/basededatos/domain/RespuestaUsuario.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="655" y="415"/>    
+    <position height="-1" width="-1" x="737" y="440"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="com.basededatos.domain.Usuario" project="DBEncuestadora" 
-    file="/DBEncuestadora/src/main/java/com/basededatos/domain/Usuario.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="542" y="848"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="7" language="java" name="com.basededatos.domain.Rol" project="DBEncuestadora" 
+  <class id="6" language="java" name="com.basededatos.domain.Rol" project="DBEncuestadora" 
     file="/DBEncuestadora/src/main/java/com/basededatos/domain/Rol.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="859" y="848"/>    
+    <position height="-1" width="-1" x="105" y="750"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="com.basededatos.domain.Respuesta" project="DBEncuestadora" 
-    file="/DBEncuestadora/src/main/java/com/basededatos/domain/Respuesta.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="934" y="61"/>    
+  <class id="7" language="java" name="com.basededatos.domain.Encuestadora" project="DBEncuestadora" 
+    file="/DBEncuestadora/src/main/java/com/basededatos/domain/Encuestadora.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="108" y="-209"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="9">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="10" name="usuario"/>      
-      <multiplicity id="11" minimum="0" maximum="1"/>    
+  <class id="8" language="java" name="com.basededatos.domain.EstadoEncuesta" project="DBEncuestadora" 
+    file="/DBEncuestadora/src/main/java/com/basededatos/domain/EstadoEncuesta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="701" y="-284"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.basededatos.domain.Pregunta" project="DBEncuestadora" 
+    file="/DBEncuestadora/src/main/java/com/basededatos/domain/Pregunta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="715" y="26"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="10">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="11" name="usuarios"/>      
+      <multiplicity id="12" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="12">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="13" name="estado"/>      
-      <multiplicity id="14" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="15">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="16" name="rol"/>      
-      <multiplicity id="17" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="18">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="19" name="encuesta"/>      
-      <multiplicity id="20" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="21">    
+  <association id="13">    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="22" name="pregunta"/>      
-      <multiplicity id="23" minimum="0" maximum="1"/>    
+      <attribute id="14" name="pregunta"/>      
+      <multiplicity id="15" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="16">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="17" name="encuestas"/>      
+      <multiplicity id="18" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="24">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="25" name="respuesta"/>      
-      <multiplicity id="26" minimum="0" maximum="1"/>    
+  <association id="19">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="20" name="preguntas"/>      
+      <multiplicity id="21" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="27">    
+  <association id="22">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="28" name="preguntas"/>      
-      <multiplicity id="29" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="30">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="31" name="respuestasUsuario"/>      
-      <multiplicity id="32" minimum="0" maximum="2147483647"/>    
+      <attribute id="23" name="respuestasUsuario"/>      
+      <multiplicity id="24" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="33">    
+  <association id="25">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="26" name="rol"/>      
+      <multiplicity id="27" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="28">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="34" name="respuestas"/>      
-      <multiplicity id="35" minimum="0" maximum="2147483647"/>    
+      <attribute id="29" name="estado"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="31">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="32" name="respuesta"/>      
+      <multiplicity id="33" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="34">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="35" name="usuario"/>      
+      <multiplicity id="36" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="37">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="38" name="encuesta"/>      
+      <multiplicity id="39" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="40">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="41" name="respuestas"/>      
+      <multiplicity id="42" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

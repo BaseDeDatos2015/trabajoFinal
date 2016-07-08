@@ -31,18 +31,18 @@
 					<td th:text="${usuario.rol.nombre}"></td>
 					<td>
 						<a class="btn btn-default"	th:href="'/usuarios/edit/' + ${usuario.id}"> 
-							<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+							<span title="Modificar" class="glyphicon glyphicon-edit" aria-hidden="true"></span>
 						</a>
 					</td>
 					<td>
 						<a class="btn btn-default" href="#modal_delete"	data-toggle="modal"	th:attr="data-id='/usuarios/delete/'+${usuario.id}">
-							<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+							<span title="Borrar" class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 						</a>
 					</td>
 				</tr>
 			</tbody>
 		</table>
-		<a href="/usuarios/new" class="btn btn-default" role="button">Nuevo usuario</a>
+		<a href="/usuarios/new" title="Agregar"  class="btn btn-default" role="button">Nuevo usuario</a>
 	</div>
 	</div>
 	</div>
