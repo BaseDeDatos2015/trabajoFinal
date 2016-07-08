@@ -125,7 +125,7 @@ public class EncuestaController {
 			resolverEncuestaDTO.setPreguntaActual(null);
 		}
 		resolverEncuestaSession.setNumeroDePreguntaActual(resolverEncuestaSession.getNumeroDePreguntaActual()+1);	
-		resolverEncuestaSession.setNumeroDePreguntaActual(resolverEncuestaSession.getNumeroDePreguntaActual()+1);	
+		
 		resolverEncuestaSession.setPreguntaActual(resolverEncuestaDTO.getPreguntaActual());
 
 
